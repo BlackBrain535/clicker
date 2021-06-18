@@ -1,0 +1,237 @@
+@import "nullStyle.scss";
+
+
+@font-face {
+	font-family: Top;
+	src: url('Rer.otf');
+}
+
+
+.header {
+	display: flex;
+	align-items: center;
+	user-select: none;
+
+	width: 100%;
+	height: 200px;
+	background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+	border-bottom: 20px solid black;
+	border-top: 20px solid black;
+	&__body {
+		max-width: 1000px;
+		margin: 0 auto;
+
+
+	}
+	&__title {
+		color: white;
+		font-size: 140px;
+		text-shadow: 6px 6px 1px black;
+		font-family: Top;
+
+	}
+}
+
+.click {
+	user-select: none;
+	width: 100%;
+	border-bottom: 20px solid black;
+	background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+	&__body {
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__button {
+		display: inline-block;
+		margin: 100px 0 20px 0;
+		border: 4px solid black;
+		box-shadow: 0 10px 5px black;
+		
+
+		
+	}
+
+	&__button:active{
+		box-shadow: 0 0 0 black;
+		position: relative;
+		top: 8px;
+	}
+
+
+	&__text {
+		display: inline-block;
+		border-bottom: 10px solid black;
+		border-top: 10px solid black;
+		border-left: 3px solid black;
+		border-right: 3px solid black;
+		border-radius: 20px;
+		border-bottom-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+		color: white;
+		font-size: 100px;
+		text-shadow: 4px 4px 1px black;
+		font-family: Top;
+		margin: 50px 0 100px 0;
+		padding: 5px 10px 5px 10px;
+	}
+
+	img{
+		width: 500px;
+		height: 500px;
+		
+
+	}
+}
+
+
+
+
+
+.notepad {
+	user-select: none;
+	width: 100%;
+	background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+	border-bottom: 20px solid black;
+	&__body {
+		display: flex;
+		flex-direction: column;
+
+
+		max-width: 1000;
+		margin: auto;
+		background: rgba(0,0,0,0);
+	}
+
+	&__title{
+		display: inline-block;
+		margin: 100px auto;
+
+		color: white;
+		font-family: Top;
+		font-size: 100px;
+		
+
+
+
+	}
+
+
+	&__list {
+		margin: auto;
+		position: relative;
+		top: -90px;
+		margin-bottom: 100px;
+		border-radius: 40px;
+		background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+		padding: 30px;
+		border: 2px solid black;
+		box-shadow: 0 0 20px greenyellow;
+	}
+	&__ul {
+		
+
+
+	}
+	&__li {
+		min-width: 300px;
+		max-width: 500px;
+		border-bottom: 14px solid black;
+		border-radius: 30px;
+		margin: 50px;
+		color: black;
+		font-size: 80px;
+		padding: 5px;
+		font-family: Top;
+		text-shadow: 0 0 1px greenyellow;
+		 
+
+	}
+}
+
+
+
+
+.block {
+	widows: 100%;
+	
+	
+	background: rgba(0,0,0,0.1);
+	user-select: none;
+	margin: 0 auto;
+	background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
+
+
+
+	&__body {
+		margin: auto;
+		max-width: 1000px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		border: 30px solid rgba(0,0,0,0);
+		padding: 20px;
+		background: rgba(0,0,0,0);
+	}
+	&__conteiner {
+		border: 10px solid black;
+		background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+		margin: 0px 5px 10px 5px;
+		box-shadow: inset 0 0 10px black;
+	}
+	&__img {
+		border: 2px solid black;
+		margin: 10px;
+		box-shadow: 0 0 10px black;
+
+	}
+	&__text {
+		border: 2px solid rgba(0,0,0,0);
+		margin: 10px;
+		font-size: 50px;
+		text-align: center;
+		padding: 5px;
+		font-family: Top;
+		text-shadow: 2px 2px 1px white;
+
+
+		
+	}
+	&__button {
+		border: 2px solid rgba(0,0,0,0);
+		margin: 10px;
+		
+		text-align: center;
+		padding: 5px;
+		font-family: Top;
+	}
+
+	img{
+		width: 300px;
+		height: 300px;
+		
+
+
+	}
+
+	button{
+		background: none;
+		border: 2px solid black;
+		padding: 5px 10px 5px 10px;
+		border-radius: 10px;
+		border-top: 5px solid black;
+		border-bottom-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+		font-size: 50px;
+		box-shadow: 0 4px 1px black;
+		text-shadow: 2px 2px 1px white;
+		padding: 5px 20px 5px 20px;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	button:active{
+		box-shadow: 0 0 0 black, inset 0 4px 10px black;
+		position: relative;
+		top: 4px;
+
+	}
+}
