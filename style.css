@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Truculenta:wdth,wght@125,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -60,207 +62,140 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 @font-face {
-  font-family: Top;
-  src: url("Rer.otf"); }
+  font-family: "Top";
+  src: url("10733.otf"); }
+
+@font-face {
+  font-family: "Top2";
+  src: url("top.otf"); }
+
+@font-face {
+  font-family: "Top3";
+  src: url("top3.ttf"); }
+
+@font-face {
+  font-family: "Top4";
+  src: url("top4.otf"); }
+
+body {
+  background: white; }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: black;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-  width: 100%;
-  height: 200px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#243949), to(#517fa4));
-  background-image: -webkit-linear-gradient(left, #243949 0%, #517fa4 100%);
-  background-image: -o-linear-gradient(left, #243949 0%, #517fa4 100%);
-  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
-  border-bottom: 20px solid black;
-  border-top: 20px solid black; }
-  .header__body {
-    max-width: 1000px;
-    margin: 0 auto; }
+  user-select: none; }
   .header__title {
+    display: inline-block;
+    padding: 5px 0 10px 0;
+    font-size: 100px;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Truculenta', sans-serif;
+    font-family: Top4;
     color: white;
-    font-size: 140px;
-    text-shadow: 6px 6px 1px black;
-    font-family: Top; }
+    letter-spacing: 0px; }
 
 .click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: white;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-  width: 100%;
-  border-bottom: 20px solid black;
-  background-image: -webkit-linear-gradient(315deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  background-image: -o-linear-gradient(315deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%); }
-  .click__body {
-    margin: 0 auto;
-    text-align: center; }
+  user-select: none; }
   .click__button {
-    display: inline-block;
-    margin: 100px 0 20px 0;
-    border: 4px solid black;
-    -webkit-box-shadow: 0 10px 5px black;
-    box-shadow: 0 10px 5px black; }
+    width: 200px;
+    height: 200px;
+    margin: 30px 0 40px 0;
+    border-radius: 0;
+    border: 2px solid black;
+    -webkit-box-shadow: 0 10px 10px black;
+    box-shadow: 0 10px 10px black;
+    padding: 10px;
+    background: white; }
   .click__button:active {
     -webkit-box-shadow: 0 0 0 black;
     box-shadow: 0 0 0 black;
     position: relative;
     top: 8px; }
-  .click__text {
-    display: inline-block;
-    border-bottom: 10px solid black;
-    border-top: 10px solid black;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    border-radius: 20px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    color: white;
-    font-size: 100px;
-    text-shadow: 4px 4px 1px black;
-    font-family: Top;
-    margin: 50px 0 100px 0;
-    padding: 5px 10px 5px 10px; }
-  .click img {
-    width: 500px;
-    height: 500px; }
 
-.notepad {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.Click {
+  font-size: 80px;
+  color: white;
+  font-family: Top4;
+  background: black;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#323232), color-stop(40%, #3F3F3F), color-stop(150%, #1C1C1C)), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), color-stop(200%, rgba(0, 0, 0, 0.25)));
-  background: -webkit-linear-gradient(top, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-  background: -o-linear-gradient(top, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), -o-linear-gradient(bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-  background-blend-mode: multiply;
-  border-bottom: 20px solid black; }
-  .notepad__body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-width: 1000;
-    margin: auto;
-    background: rgba(0, 0, 0, 0); }
-  .notepad__title {
-    display: inline-block;
-    margin: 100px auto;
-    color: white;
-    font-family: Top;
-    font-size: 100px; }
-  .notepad__list {
-    margin: auto;
-    position: relative;
-    top: -90px;
-    margin-bottom: 100px;
-    border-radius: 40px;
-    background-image: -webkit-linear-gradient(110deg, #616161 0%, #9bc5c3 100%);
-    background-image: -o-linear-gradient(110deg, #616161 0%, #9bc5c3 100%);
-    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
-    padding: 30px;
-    border: 2px solid black;
-    -webkit-box-shadow: 0 0 20px greenyellow;
-    box-shadow: 0 0 20px greenyellow; }
-  .notepad__li {
-    min-width: 300px;
-    max-width: 500px;
-    border-bottom: 14px solid black;
-    border-radius: 30px;
-    margin: 50px;
-    color: black;
-    font-size: 80px;
-    padding: 5px;
-    font-family: Top;
-    text-shadow: 0 0 1px greenyellow; }
+  text-align: center;
+  padding: 10px; }
 
-.block {
-  widows: 100%;
-  background: rgba(0, 0, 0, 0.1);
+.shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-  margin: 0 auto;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#50cc7f), to(#f5d100));
-  background-image: -webkit-linear-gradient(bottom, #50cc7f 0%, #f5d100 100%);
-  background-image: -o-linear-gradient(bottom, #50cc7f 0%, #f5d100 100%);
-  background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%); }
-  .block__body {
-    margin: auto;
+  user-select: none; }
+  .shop__button-dollars {
+    font-family: Top4;
+    font-size: 80px;
+    padding: 20px 10px 20px 10px;
+    margin: 20px 0 0 0;
     max-width: 1000px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    border: 30px solid rgba(0, 0, 0, 0);
-    padding: 20px;
-    background: rgba(0, 0, 0, 0); }
-  .block__conteiner {
-    border: 10px solid black;
-    background-image: -webkit-gradient(linear, left top, right top, from(#243949), to(#517fa4));
-    background-image: -webkit-linear-gradient(left, #243949 0%, #517fa4 100%);
-    background-image: -o-linear-gradient(left, #243949 0%, #517fa4 100%);
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
-    margin: 0px 5px 10px 5px;
-    -webkit-box-shadow: inset 0 0 10px black;
-    box-shadow: inset 0 0 10px black; }
-  .block__img {
-    border: 2px solid black;
-    margin: 10px;
-    -webkit-box-shadow: 0 0 10px black;
-    box-shadow: 0 0 10px black; }
-  .block__text {
-    border: 2px solid rgba(0, 0, 0, 0);
-    margin: 10px;
-    font-size: 50px;
-    text-align: center;
-    padding: 5px;
-    font-family: Top;
-    text-shadow: 2px 2px 1px white; }
-  .block__button {
-    border: 2px solid rgba(0, 0, 0, 0);
-    margin: 10px;
-    text-align: center;
-    padding: 5px;
-    font-family: Top; }
-  .block img {
-    width: 300px;
-    height: 300px; }
-  .block button {
     background: none;
-    border: 2px solid black;
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-    border-top: 5px solid black;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    font-size: 50px;
-    -webkit-box-shadow: 0 4px 1px black;
-    box-shadow: 0 4px 1px black;
-    text-shadow: 2px 2px 1px white;
-    padding: 5px 20px 5px 20px;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-  .block button:active {
-    -webkit-box-shadow: 0 0 0 black, inset 0 4px 10px black;
-    box-shadow: 0 0 0 black, inset 0 4px 10px black;
+    border-radius: 20px;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-top: 6px solid black;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    -webkit-box-shadow: 0 10px 10px black;
+    box-shadow: 0 10px 10px black;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.15))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), -webkit-radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), -o-radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+    background-blend-mode: multiply,multiply; }
+  .shop__button-dollars:active {
+    -webkit-box-shadow: 0 0 0 black;
+    box-shadow: 0 0 0 black;
     position: relative;
-    top: 4px; }
+    top: 10px; }
+  .shop__dollars {
+    font-size: 80px;
+    border: 4px solid black;
+    border-radius: 0px;
+    text-align: center;
+    font-family: Top4;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    background: #138900;
+    margin: 10px 0 10px 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.15))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), -webkit-radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), -o-radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+    background-blend-mode: multiply,multiply; }
